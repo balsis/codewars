@@ -122,3 +122,40 @@ function boolToWord( bool ){
   return bool==true ? 'Yes' : 'No';
 }
 
+//9. Rock Paper Scissors
+
+/*
+Let's play! You have to return which player won! In case of a draw return Draw!.
+
+Examples(Input1, Input2 --> Output):
+
+"scissors", "paper" --> "Player 1 won!"
+"scissors", "rock" --> "Player 2 won!"
+"paper", "paper" --> "Draw!"
+*/
+
+const rps = (p1, p2) => {
+  let res;
+  if (p1==p2);{
+    res='Draw!';
+  }
+  if (p1=='scissors'&&p2=='paper'){
+    res='Player 1 won!';
+  }
+  if (p1=='paper'&&p2=='rock'){
+    res='Player 1 won!';
+  }  
+  if (p1=='rock'&&p2=='scissors'){
+    res='Player 1 won!';
+  }    
+  if (p2=='scissors'&&p1=='paper'){
+    res='Player 2 won!';
+  }
+  if (p2=='paper'&&p1=='rock'){
+    res='Player 2 won!';
+  }  
+  if (p2=='rock'&&p1=='scissors'){
+    res='Player 2 won!';  
+  }  
+  return res
+};
