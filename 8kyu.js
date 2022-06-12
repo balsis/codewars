@@ -167,3 +167,22 @@ It's pretty straightforward. Your goal is to create a function that removes the 
 function removeChar(str){
  return res=str.slice(1, -1)
 };
+
+// 11. Grasshopper - Personalized Message
+/*
+Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+
+Use conditionals to return the proper message:
+
+case	return
+name equals owner	'Hello boss'
+otherwise	'Hello guest'
+*/
+
+function greet (name, owner) {
+if (name == owner) {
+    return "Hello boss";
+} else {
+    return "Hello guest";
+}
+}
