@@ -208,4 +208,14 @@ line=String(line);
   else {return false}
 };
 
+// 13. Is it a palindrome?
 
+//Write a function that checks if a given string (case insensitive) is a palindrome.
+
+function isPalindrome(x) {
+let x2 = x.toLowerCase();
+  if (x2===x2.split('').reverse().join('')){
+       return true;
+    }
+  else {return false}
+}
